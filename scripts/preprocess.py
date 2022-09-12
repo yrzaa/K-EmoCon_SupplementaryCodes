@@ -290,12 +290,12 @@ if __name__ == "__main__":
     logger = init_logger(tz=args.timezone)
     logger.info(f'Read/writing files to {args.root}...')
     PATHS = {
-        'e4_dir': os.path.expanduser(os.path.join(args.root, 'raw/e4_data')),
-        'h7_dir': os.path.expanduser(os.path.join(args.root, 'raw/neurosky_polar_data')),
+        'e4_dir': os.path.expanduser(os.path.join(args.root, 'e4_data')),
+        'h7_dir': os.path.expanduser(os.path.join(args.root, 'neurosky_polar_data')),
         'subjects_info_path': os.path.expanduser(os.path.join(args.root, 'metadata/subjects.csv')),
-        'self_ratings_dir': os.path.expanduser(os.path.join(args.root, 'raw/emotion_annotations/self_annotations')),
-        'partner_ratings_dir': os.path.expanduser(os.path.join(args.root, 'raw/emotion_annotations/partner_annotations')),
-        'external_ratings_dir': os.path.expanduser(os.path.join(args.root, 'raw/emotion_annotations/aggregated_external_annotations')),
+        'self_ratings_dir': os.path.expanduser(os.path.join(args.root, 'emotion_annotations/self_annotations')),
+        'partner_ratings_dir': os.path.expanduser(os.path.join(args.root, 'emotion_annotations/partner_annotations')),
+        'external_ratings_dir': os.path.expanduser(os.path.join(args.root, 'emotion_annotations/aggregated_external_annotations')),
         'baseline_dir': os.path.expanduser(os.path.join(args.root, 'baseline')),
         'segments_dir': os.path.expanduser(os.path.join(args.root, 'segments')),
     }
